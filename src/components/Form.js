@@ -26,7 +26,12 @@ export class Form extends Component {
                     <input type = 'text' value = {comment} onChange = {e =>{this.setState({comment: e.target.value})}}/>
                     <br/>
                     <label>Topics</label>
-                    <input type = 'options' value = {topic} onChange = {e =>{this.setState({topic: e.target.value})}}/>
+                    <select value = {topic} onChange = {e =>{this.setState({topic: e.target.value})}}>                           
+                            <option value = 'react'>React</option>
+                            <option value = 'angular'>Angular</option>
+                            <option value = 'vue'>Vue</option>
+
+                    </select>
                    <br/> 
                    <button type = 'submit'>Submit</button>
                 </form>
