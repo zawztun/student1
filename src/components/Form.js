@@ -15,7 +15,7 @@ export class Form extends Component {
         console.log(this.state)}
     
     render() {
-        const {username,topics, comment} = this.state;
+        const {username,topic, comment} = this.state;
         return (
             <div>
                 <form onSubmit={this.onFormSubmit}>
@@ -26,7 +26,7 @@ export class Form extends Component {
                     <input type = 'text' value = {comment} onChange = {e =>{this.setState({comment: e.target.value})}}/>
                     <br/>
                     <label>Topics</label>
-                    <input type = 'options' value = {topics} onChange = {e =>{this.setState({topics: e.target.value})}}/>
+                    <input type = 'options' value = {topic} onChange = {e =>{this.setState({topic: e.target.value})}}/>
                    <br/> 
                    <button type = 'submit'>Submit</button>
                 </form>
