@@ -11,7 +11,8 @@ export class Form extends Component {
         }
     }
     onFormSubmit =(e) =>{
-        console.log(state)}
+        e.preventDefault()
+        console.log(this.state)}
     
     render() {
         const {username,topics, comment} = this.state;
